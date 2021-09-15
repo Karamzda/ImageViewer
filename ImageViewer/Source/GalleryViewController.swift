@@ -34,8 +34,8 @@ open class GalleryViewController: UIPageViewController, ItemControllerDelegate {
     fileprivate var initialPresentationDone = false
 
     // DATASOURCE/DELEGATE
-    fileprivate let itemsDelegate: GalleryItemsDelegate?
-    fileprivate let itemsDataSource: GalleryItemsDataSource
+    fileprivate weak var itemsDelegate: GalleryItemsDelegate?
+    fileprivate weak var itemsDataSource: GalleryItemsDataSource!
     fileprivate let pagingDataSource: GalleryPagingDataSource
 
     // CONFIGURATION
